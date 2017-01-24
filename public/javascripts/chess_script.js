@@ -127,6 +127,7 @@ function setUp_figures(color) {
 
 
 function ws_test() {
+	alert("HALLO");
 	websocket = new WebSocket(uri);
 	websocket.onopen = function() { onOpen };
 	websocket.onclose = function() { onClose };
@@ -135,6 +136,7 @@ function ws_test() {
 }
 
 function onOpen() {
+	alert("CONNECTED!");
 	//pass
 }
 
