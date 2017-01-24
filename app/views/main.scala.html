@@ -1,0 +1,55 @@
+@*
+ * This template is called from the `index` template. This template
+ * handles the rendering of the page header and body tags. It takes
+ * two arguments, a `String` for the title of the page and an `Html`
+ * object to insert into the body of the page.
+ *@
+@(title: String)(content: Html)
+
+<!DOCTYPE html>
+<html lang="en">
+<!--<div class="rechts"></div> -->
+
+
+    <head>
+    
+    <!doctype html>
+    <meta charset="utf-8">
+    <title>Web Chess</title>
+    <script src="bower_components/platform/platform.js"></script>
+    
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.3.7/css/bootstraptheme.min.css">
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="//netdna.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    
+    
+    <link rel="import" href="assets/polymerElement/login-polymer.html" />
+    
+    <script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+    
+        @* Here's where we render the page title `String`. *@
+        <title>Schach.de</title>
+        
+    <link href="@routes.Assets.versioned("stylesheets/main.css")" rel="stylesheet">
+    
+    <script src="@routes.Assets.versioned("polymer/bower_components/webcomponentsjs/webcomponents-lite.js")"></script>
+    <link rel="import" href="@routes.Assets.versioned("polymer/bower_components/polymer/polymer.html")">
+    <link rel="import" href="@routes.Assets.versioned("polymer/src/chess-app/chess-app.html")">
+    
+    <script src="https://apis.google.com/js/platform.js" async defer></script>
+        <meta name="google-signin-client_id" content="652729356373-eb59ib44t596h4c5vo7ppg0hn70ho7en.apps.googleusercontent.com">
+        
+    
+   
+    </head>
+    
+    <body>
+    
+     @content
+    
+    
+    </body>
+</html>

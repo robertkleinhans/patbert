@@ -1,0 +1,6 @@
+{
+  "name": "chess",
+  "short_name": "chess",
+  "start_url": "/",
+  "display": "standalone"
+}

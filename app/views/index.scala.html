@@ -1,0 +1,86 @@
+@*
+ * This template takes a single argument, a String containing a
+ * message to display.
+ *@
+@(message: String)
+
+@*
+ * Call the `main` template with two arguments. The first
+ * argument is a `String` with the title of the page, the second
+ * argument is an `Html` object containing the body of the page.
+ *@
+@main("Welcome to Play") {
+    
+    
+
+    <div>
+            
+    
+            <nav class="navbar navbar-default">
+          <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand active" href=""><span class="glyphicon glyphicon-king" aria-hidden="true"></span> Schach<span class="sr-only">(current)</span></a>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+              <ul class="nav navbar-nav">
+                <li><a href="/game"><span class="glyphicon glyphicon-knight" aria-hidden="true"></span> Spiel</a></li>
+                <li><a href="/rules"><span class="glyphicon glyphicon-tower" aria-hidden="true"></span> Regeln</a></li>
+              </ul>
+              <ul class="nav navbar-nav navbar-right">
+                 <button style="background-color:#8b4513" class="btn btn-default" onclick="document.getElementById('bereich1').style.color = '#8b4513';"></button>  <!-- braun -->
+                 <button style="background-color:#8B0000" class="btn btn-default" onclick="document.getElementById('bereich1').style.color = '#8B0000';"></button>  <!-- rot -->
+                 <button style="background-color:#008000" class="btn btn-default" onclick="document.getElementById('bereich1').style.color = '#008000';"></button>  <!-- grün -->
+                 <button style="background-color:#0000FF" class="btn btn-default" onclick="document.getElementById('bereich1').style.color = '#0000FF';"></button>  <!-- blau -->
+                 <button style="background-color:#FFD700" class="btn btn-default" onclick="document.getElementById('bereich1').style.color = '#FFD700';"></button>  <!-- gold -->
+                 <button style="background-color:#000000" class="btn btn-default" onclick="document.getElementById('bereich1').style.color = '#000000';"></button>  <!-- schwarz -->
+                 <button style="background-color:#4B0082" class="btn btn-default" onclick="document.getElementById('bereich1').style.color = '#4B0082';"></button>  <!-- lila -->
+              </ul>
+            </div><!-- /.navbar-collapse -->
+          </div><!-- /.container-fluid -->
+        </nav>
+        
+        
+         <ul class="breadcrumb">
+                <li>
+                    <a href="#">Home</a> <span class="divider"></span>
+                </li>
+                <li>
+                    <a herf="#">Libary</a> <span class="divider"></span>
+                </li>
+                <li class="activate">Data</li>
+            </ul>
+            
+            <div class="panel panel-default">
+                <div class="panel-body">
+                <p id="bereich1">
+                    Hier könnte Ihre Werbung stehen!
+                </p>
+                </div>
+            </div>
+            
+            
+            
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h3 class="panel-title">Spielfiguren:</h3>
+                </div>
+                <div class="panel-body">
+                     <span class="glyphicon glyphicon-king" aria-hidden="true"> König<span style="margin-left:64px"></span>  </span>
+                     <span class="glyphicon glyphicon-queen" aria-hidden="true"> Dame<span style="margin-left:64px"></span></span>
+                     <span class="glyphicon glyphicon-bishop" aria-hidden="true"> Läufer<span style="margin-left:64px"></span>  </span>
+                     <span class="glyphicon glyphicon-knight" aria-hidden="true"> Springer<span style="margin-left:64px"></span>  </span>
+                     <span class="glyphicon glyphicon-tower" aria-hidden="true"> Turm<span style="margin-left:64px"></span>  </span>
+                     <span class="glyphicon glyphicon-pawn" aria-hidden="true"> Bauer<span style="margin-left:64px"></span>  </span>
+                     
+                </div>
+            </div>
+    </div>
+}

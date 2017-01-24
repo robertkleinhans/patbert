@@ -1,0 +1,32 @@
+@main("Welcome to Play") {
+
+
+ <script src="https://apis.google.com/js/platform.js" async defer></script>
+        <meta name="google-signin-client_id" content="145682336450-h7dhjmddoqjclvs3jpes83pv2mkr40ji.apps.googleusercontent.com">
+   
+    
+    <chess-app></chess-app>
+  
+    
+    <center>
+    
+    <div id="login-div" class="middle">
+        <div id="login-button" class="middle pt5">
+            <div class="g-signin2" data-onsuccess="onSignIn"></div>
+        </div>
+    </div>
+    
+    
+     </center>
+    
+<script>
+     function onSignIn(googleUser) {
+        window.location = "/home"
+    }; 
+</script>
+  
+  
+}
+
+
+
